@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title> DRA. LISA SU </title>
+    <style>
+        h1{
+            font-family: "century ghotic";
+            color : rgba(0, 0, 0, 0);
+            text-align: center;
+
+            animation-name:titulo;
+            animation-duration: 2s;
+            animation-iteration-count: 1;    
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes titulo{
+            from{
+                color : rgba(0, 0, 0, 0);                   
+            }
+            to{ 
+                color : rgb(0, 0, 0);   
+            }
+        }
+
+         h2{
+            font-family: "century ghotic";
+            color : rgba(0, 0, 0, 0);
+            text-align: center;
+
+            animation-name:subtitulo;
+            animation-duration: 2s;
+            animation-iteration-count: 1;    
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+        }
+        
+        @keyframes subtitulo{
+            from{
+                color : rgba(0, 0, 0, 0);                   
+            }
+            to{ 
+                color : rgb(255, 0, 0);   
+            }
+        }
+        
+        img{
+            height: 200px;
+            width: 200px;
+            display: block;/* modo demostrar el objeto */
+            margin: auto;/* centrar imagen */
+            opacity: 0;
+            animation: imagen 2s 4s 1 forwards;
+        }
+
+        @keyframes imagen{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        p{
+            text-align: center;
+            font-family: "century gohtic";
+            font-weight: bold;
+            animation-name:texto;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: backwards; 
+        }
+
+        p:nth-of-type(1) {
+            animation-delay: 6s;
+        }
+
+        p:nth-of-type(2) {
+            animation-delay: 8s;
+        }
+        /* Si use IA para poder hacer que los parrafos tengan su propio delay cada uno xd */
+        @keyframes texto{
+            from{
+                color:rgba(0,0,0,0);
+            }
+            to{
+                color:rgba(0,0,0,1);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>  DRA. LISA SU </h1>
+    <h2> Presidenta y directora de AMD </h2>
+    <img src="img/lisa.jpg">
+    <p><i>  Es la presidenta y directora ejecutiva (CEO) de AMD (Advanced Micro Devices), 
+        cargo que ocupa desde octubre de 2014. Es famosa por haber liderado uno de los 
+        procesos de recuperación corporativa más exitosos en la historia de la tecnología.
+     </i></p>
+     <p><i> Cuando asumió el mando, AMD atravesaba una situación financiera muy precaria y 
+        luchaba por competir contra gigantes como Intel. Bajo su dirección, la compañía cambió 
+        su estrategia hacia procesadores de alto rendimiento. Logró estabilizar la empresa y, 
+        posteriormente, posicionarla como líder del mercado gracias a la arquitectura Zen. 
+    </i></p>
+</body>
+</html>
